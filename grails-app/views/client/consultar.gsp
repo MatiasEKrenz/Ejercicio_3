@@ -41,22 +41,31 @@
     </tr>
     <tr>
         <g:each var="coso" in="${categories}">
-            <th><button type="button" onclick="like()">Like</button></th>
+            <th><button type="button" onclick="like(coso.agency_code)">Like</button></th>
         </g:each>
     </tr>
     <tr>
         <g:each var="coso" in="${categories}">
-            <th><button type="button" onclick="disLike()">DisLike</button></th>
+            <th><button type="button" onclick="disLike(coso.agency_code)">DisLike</button></th>
         </g:each>
     </tr>
 </table>
 
+<p id="demo"></p>
+
 <script>
-    function like() {
+    function like(agency_code) {
+
+       /* var elemento = ${categories}.find(agency_code);
+
+        $.post('/client/guardar', {
+            category:'client',
+            type:'premium'
+        });*/
         document.getElementById("demo").innerHTML = "Like";
     }
 
-    function disLike() {
+    function disLike(agency_code) {
         document.getElementById("demo").innerHTML = "Dislike";
     }
 </script>

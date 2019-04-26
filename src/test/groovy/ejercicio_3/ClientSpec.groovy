@@ -3,7 +3,7 @@ package ejercicio_3
 import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
-class AgencySpec extends Specification implements DomainUnitTest<Agency> {
+class ClientSpec extends Specification implements DomainUnitTest<Client> {
 
     def setup() {
     }

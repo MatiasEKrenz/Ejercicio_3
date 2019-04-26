@@ -1,6 +1,6 @@
 package ejercicio_3
 
-class Agency {
+class Client {
 
 
     String agency_code;
